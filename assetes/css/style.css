@@ -1,0 +1,292 @@
+    /*start general style*/
+    
+    body {
+        font-family: 'Cairo', sans-serif, 'Roboto';
+    }
+    
+    .white-color {
+        color: #FFF;
+    }
+    
+    .selver-color {
+        color: rgb(239 239 239)
+    }
+    
+    .Cashmere-color {
+        color: #ce4b5e
+    }
+    
+    .Cashmere-color:hover {
+        color: #ce4b5e
+    }
+    
+    .orange-color {
+        color: #f48359
+    }
+    
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    .btn-search:focus,
+    select:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+    
+    .cars,
+    .tec,
+    .btn-more {
+        background-image: linear-gradient(to bottom, #ca4659, #f48359);
+    }
+    
+    .mobile,
+    .aniamls {
+        background-image: linear-gradient(to bottom, #ff5a72, #50151e);
+    }
+    
+    .build {
+        background-image: linear-gradient(to bottom, #ff9168, #733823);
+    }
+    
+    .fashon {
+        background-image: linear-gradient(to bottom, #00d9f5, #008394);
+    }
+    
+    .border-heading::before {
+        content: "";
+        position: absolute;
+        height: 42px;
+        width: 4px;
+        top: -7px;
+        right: 0;
+        background: #ff9168;
+    }
+    
+    .reset-link {
+        color: #2a2a2a
+    }
+    
+    .reset-link:hover {
+        text-decoration: none;
+        color: #323232
+    }
+    /*end general style*/
+    /*start header*/
+    
+    .header {
+        height: 600px;
+        background: url('../images/bg.png')center/cover no-repeat;
+    }
+    
+    .header .add-advertisement {
+        padding: 1.5rem 2rem 0 0;
+    }
+    
+    .header .add-advertisement .add-title {
+        display: inline-block;
+        background: #FFF;
+        padding: .4rem 2.3rem;
+        margin-right: .5rem;
+        border-radius: 15px;
+    }
+    
+    .header .move-form {
+        position: relative;
+        height: 350px;
+    }
+    
+    .header .move-form .form-content {
+        position: absolute;
+        top: 65%;
+        width: 100%;
+        padding: 2rem 0;
+        background-image: linear-gradient(to right, #c73a4f, #f5855b);
+    }
+    
+    input[type="text"],
+    select,
+    .btn-search {
+        width: 90%;
+        border: 0;
+        padding: .8rem 2rem .8rem 0;
+        border-radius: 20px;
+    }
+    
+    select {
+        display: inline-block;
+        appearance: none;
+    }
+    
+    select.minimal {
+        background-image: linear-gradient(45deg, transparent 50%, #ce4b5e 50%), linear-gradient(135deg, #ce4b5e 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+        background-position: calc(10% - 18px) calc(1.1em + 3px), calc(10% - 10px) calc(1.1em + 3px), calc(100% - -2.5em) 5.7em;
+        background-size: 8px 8px, 8px 8px, 0px 0;
+        background-repeat: no-repeat;
+    }
+    
+    select:invalid,
+    select option[value=""] {
+        color: #797979fa;
+    }
+    
+    select option {
+        color: #000000;
+    }
+    
+    .btn-search {
+        background: #FFF;
+        color: #797979fa;
+    }
+    /*end header*/
+    /*start section-properties*/
+    
+    .section-Properties {
+        margin-top: 60px
+    }
+    
+    .section-Properties .property-Info .product-name {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+    }
+    
+    .section-Properties .dropdown .btn {
+        padding-right: 0;
+    }
+    
+    .dropdown-toggle::after {
+        display: none;
+    }
+    
+    .btn-dark {
+        width: 175px;
+        border-radius: 15px;
+        background-color: #3d3d3d;
+        color: #dedede;
+    }
+    
+    .fa-caret-down {
+        display: inline-block;
+        position: absolute;
+        left: 7px;
+        top: 9px;
+    }
+    
+    .dropdown-menu {
+        min-width: 11rem;
+        transform: translate3d(25px, 30px, 0px) !important;
+        background-color: #dadada6b;
+    }
+    
+    .dropdown-item {
+        text-align: center;
+    }
+    
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+        background: #ff7a7a94
+    }
+    
+    .btn-dark:not(:disabled):not(.disabled).active:focus,
+    .btn-dark:not(:disabled):not(.disabled):active:focus,
+    .show>.btn-dark.dropdown-toggle:focus,
+    .btn-dark.focus,
+    .btn-dark:focus {
+        box-shadow: none;
+    }
+    /*end section-properties*/
+    /*start Recently-added-ads*/
+    
+    .recentle-added .recentle-heading {
+        padding-right: 1rem;
+        margin-right: 2rem;
+        font-weight: 600;
+    }
+    
+    .recentle-added .offered-products .card {
+        margin-bottom: 2.5rem;
+        border-radius: 30px;
+        border: 1px solid #e4e4e4;
+        background-color: #f3f3f3;
+    }
+    
+    .recentle-added .offered-products .card-body {
+        padding: 1rem 1.5rem;
+    }
+    
+    .recentle-added .offered-products .card-body .card-title {
+        font-size: 22px;
+        font-weight: 600;
+        color: #3e3e3e;
+    }
+    
+    .recentle-added .offered-products .card-body i {
+        font-size: 1.6rem;
+    }
+    
+    .recentle-added .offered-products .card-body .reset-link span {
+        font-size: 17px;
+        margin-right: 10px;
+    }
+    
+    .recentle-added .offered-products .btn-more {
+        display: inline-block;
+        width: 200px;
+        padding: .7rem 0;
+        text-align: center;
+        font-size: 16px;
+        color: #FFF;
+        border-radius: 28px;
+    }
+    /*end Recently-added-ads*/
+    /*start subscribe-with-us*/
+    
+    .subscribe-with-us {
+        background: url("../images/Rectangle\ 9@2x.png");
+        background-size: cover;
+        padding: 2rem 0;
+    }
+    
+    .subscribe-with-us h3 {
+        font-weight: 600;
+        padding: 1.5rem 0;
+    }
+    
+    .subscribe-with-us input[type="email"] {
+        display: block;
+        min-width: 100%;
+        margin: 1.5rem auto;
+        padding: 1rem 1.5rem 1rem 0;
+        font-weight: 600;
+        border-radius: 20px;
+        border: 0;
+    }
+    
+    .subscribe-with-us .btn-send {
+        display: inline-block;
+        background: #FFF;
+        color: #f48359 !important;
+        padding: .6rem 5.5rem;
+        margin: 1.5rem 0;
+        border-radius: 20px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    /*end subscribe-with-us*/
+    /*start footer*/
+    
+    footer {
+        background: url(../images/Rectangle\ 12.png);
+        background-size: cover;
+    }
+    
+    footer p {
+        font-size: 15px;
+        padding: 0 5px;
+        line-height: 2;
+    }
+    
+    footer .list-ques .selver-color:hover {
+        color: rgb(231, 231, 231);
+    }
+    /*end footer*/
