@@ -286,7 +286,24 @@
         line-height: 2;
     }
     
-    footer .list-ques .selver-color:hover {
+    footer .list-ques li {
+        -webkit-transition: all .5s linear;
+        -moz-transition: all .5s linear;
+        -o-transition: all .5s linear;
+        transition: all .5s linear;
+    }
+    
+    footer .list-ques li:hover {
+        background: #f48359;
+    }
+    
+    footer .selver-color:hover {
         color: rgb(231, 231, 231);
     }
+    
+    footer h4 {
+        line-height: 1.6;
+    }
+    
+    footer .available-app {}
     /*end footer*/
