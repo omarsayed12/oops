@@ -61,6 +61,14 @@
         background: #ff9168;
     }
     
+    .card-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    
     .reset-link {
         color: #2a2a2a
     }
@@ -73,42 +81,62 @@
     /*start header*/
     
     .header {
-        height: 600px;
+        height: 500px;
+        position: relative;
         background: url('../images/bg.png')center/cover no-repeat;
     }
     
     .header .add-advertisement {
-        padding: 1.5rem 2rem 0 0;
+        padding: 2.5rem 2rem 0 0;
     }
     
     .header .add-advertisement .add-title {
-        display: inline-block;
         background: #FFF;
-        padding: .4rem 2.3rem;
+        padding: .4rem 2rem;
         margin-right: .5rem;
+        font-size: 15px;
         border-radius: 15px;
+        font-weight: 600;
     }
     
-    .header .move-form {
-        position: relative;
-        height: 350px;
+    .header .add-advertisement .icon-per {
+        font-size: 1.8rem;
     }
     
-    .header .move-form .form-content {
+    .header .image-Logo {
         position: absolute;
-        top: 65%;
-        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .header .image-Logo img {
+        max-width: 40%;
+    }
+    /*end header*/
+    /*start search*/
+    
+    .move-form {
+        margin-top: -46.8px;
+    }
+    
+    .move-form .form-content {
         padding: 2rem 0;
         background-image: linear-gradient(to right, #c73a4f, #f5855b);
+    }
+    
+    .move-form .form-content .space-margin {
+        margin: .5rem 0
     }
     
     input[type="text"],
     select,
     .btn-search {
-        width: 90%;
+        font-weight: 600;
+        width: 100%;
         border: 0;
-        padding: .8rem 2rem .8rem 0;
-        border-radius: 20px;
+        padding: .8rem 1.5rem;
+        border-radius: 30px;
     }
     
     select {
@@ -117,10 +145,18 @@
     }
     
     select.minimal {
+        /*
+    //Ather Custom Arrow Select
         background-image: linear-gradient(45deg, transparent 50%, #ce4b5e 50%), linear-gradient(135deg, #ce4b5e 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
-        background-position: calc(10% - 18px) calc(1.1em + 3px), calc(10% - 10px) calc(1.1em + 3px), calc(100% - -2.5em) 5.7em;
+        background-position: calc(10% - 17px) calc(1.1em + 3px), calc(10% - 10px) calc(1.1em + 3px), calc(100% - -2.5em) 5.7em;
         background-size: 8px 8px, 8px 8px, 0px 0;
         background-repeat: no-repeat;
+     */
+        background-image: url("../images/sort-down.png");
+        background-position: left 14px center;
+        background-repeat: no-repeat;
+        background-size: auto 30%;
+        border: 0;
     }
     
     select:invalid,
@@ -136,11 +172,11 @@
         background: #FFF;
         color: #797979fa;
     }
-    /*end header*/
+    /*end search*/
     /*start section-properties*/
     
     .section-Properties {
-        margin-top: 60px
+        margin-top: 60px;
     }
     
     .section-Properties .property-Info .product-name {
@@ -152,10 +188,16 @@
     
     .section-Properties .dropdown .btn {
         padding-right: 0;
+        width: 100%;
+        /*
+            background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+            background-repeat: no-repeat;
+            */
     }
+    /***************/
     
     .dropdown-toggle::after {
-        display: none;
+        display: inline-block;
     }
     
     .btn-dark {
@@ -193,6 +235,18 @@
     .btn-dark.focus,
     .btn-dark:focus {
         box-shadow: none;
+    }
+    /****************************/
+    /****************************/
+    
+    .dropdown {
+        width: 100%;
+    }
+    
+    .dropdown-toggle::after {
+        position: absolute;
+        top: 13px;
+        left: 3px
     }
     /*end section-properties*/
     /*start Recently-added-ads*/
@@ -305,5 +359,13 @@
         line-height: 1.6;
     }
     
-    footer .available-app {}
+    footer .available-app p a {
+        display: inline-block;
+        width: 190px;
+        text-align: left;
+        background: #FFF;
+        padding: .7rem 0 .7rem 1rem;
+        border-radius: 30px;
+        font-weight: 600;
+    }
     /*end footer*/

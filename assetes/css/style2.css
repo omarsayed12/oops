@@ -1,0 +1,327 @@
+  /*start general style*/
+  
+  body {
+      font-family: 'Cairo', sans-serif, 'Roboto';
+  }
+  
+  .white-color {
+      color: #FFF;
+  }
+  
+  .selver-color {
+      color: rgb(239 239 239)
+  }
+  
+  .Cashmere-color {
+      color: #ce4b5e
+  }
+  
+  .Cashmere-color:hover {
+      color: #ce4b5e
+  }
+  
+  .orange-color {
+      color: #f48359
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  .btn-search:focus,
+  select:focus,
+  .page-link:focus {
+      outline: 0;
+      box-shadow: none;
+  }
+  
+  .cars,
+  .tec,
+  .btn-more {
+      background-image: linear-gradient(to bottom, #ca4659, #f48359);
+  }
+  
+  .mobile,
+  .aniamls {
+      background-image: linear-gradient(to bottom, #ff5a72, #50151e);
+  }
+  
+  .build {
+      background-image: linear-gradient(to bottom, #ff9168, #733823);
+  }
+  
+  .fashon {
+      background-image: linear-gradient(to bottom, #00d9f5, #008394);
+  }
+  
+  .border-heading::before {
+      content: "";
+      position: absolute;
+      height: 35px;
+      width: 4px;
+      top: -5px;
+      right: 0;
+      background: #ff9168;
+  }
+  
+  .reset-link {
+      color: #2a2a2a
+  }
+  
+  .reset-link:hover {
+      text-decoration: none;
+      color: #323232
+  }
+  
+  .card-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+  }
+  /*end general style*/
+  /*start header*/
+  
+  .header {
+      height: 500px;
+      position: relative;
+      background: url('../images/bg.png')center/cover no-repeat;
+  }
+  
+  .header .add-advertisement {
+      padding: 2.5rem 2rem 0 0;
+  }
+  
+  .header .add-advertisement .add-title {
+      background: #FFF;
+      padding: .4rem 2rem;
+      margin-right: .5rem;
+      font-size: 15px;
+      border-radius: 15px;
+      font-weight: 600;
+  }
+  
+  .header .add-advertisement .icon-per {
+      font-size: 1.8rem;
+  }
+  
+  .header .image-Logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  
+  .header .image-Logo img {
+      max-width: 40%;
+  }
+  /*end header*/
+  /*start search*/
+  
+  .move-form {
+      margin-top: -80.6px;
+  }
+  
+  .move-form .form-content {
+      padding: 2rem 0;
+      background-image: linear-gradient(to right, #c73a4f, #f5855b);
+  }
+  
+  .move-form .form-content .space-margin {
+      margin: .5rem 0
+  }
+  
+  input[type="text"],
+  select,
+  .btn-search {
+      font-weight: 600;
+      width: 100%;
+      border: 0;
+      padding: .8rem 1.5rem;
+      border-radius: 30px;
+  }
+  
+  select {
+      display: inline-block;
+      appearance: none;
+  }
+  
+  select.minimal {
+      background-image: url("../images/sort-down.png");
+      background-position: left 14px center;
+      background-repeat: no-repeat;
+      background-size: auto 30%;
+      border: 0;
+  }
+  
+  select:invalid,
+  select option[value=""] {
+      color: #797979fa;
+  }
+  
+  select option {
+      color: #000000;
+  }
+  
+  .btn-search {
+      background: #FFF;
+      color: #797979fa;
+  }
+  /*------------start media search--------------*/
+  /*start searh*/
+  
+  @media screen and (max-width:400px) {
+      .move-form {
+          margin-top: -275px
+      }
+      .move-form .form-content .space-margin {
+          margin: 15px 0
+      }
+  }
+  
+  @media screen and (min-width:401px) and (max-width:575.98px) {
+      .move-form {
+          margin-top: -275px
+      }
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      .move-form {
+          margin-top: -225.4px
+      }
+      .move-form .form-content .space-margin {
+          margin: 15px 0
+      }
+  }
+  
+  @media screen and (min-width:768px) and (max-width:991.98px) {
+      .move-form {
+          margin-top: -135.2px;
+      }
+  }
+  /*------------end media search--------------*/
+  /*end search*/
+  /*start Recently-added-ads*/
+  
+  .recentle-added .recentle-heading {
+      padding-right: 1rem;
+      font-weight: 600;
+  }
+  
+  .recentle-added .offered-products .card {
+      margin-bottom: 2.5rem;
+      border-radius: 30px;
+      border: 1px solid #e4e4e4;
+  }
+  
+  .recentle-added .offered-products .card-body {
+      padding: .7rem 1rem;
+  }
+  
+  .recentle-added .offered-products .card-body p {
+      margin-bottom: .7rem;
+  }
+  
+  .recentle-added .offered-products .card-body .card-title {
+      font-size: 19px;
+      font-weight: 600;
+      color: #3e3e3e;
+  }
+  
+  .recentle-added .offered-products .card-body i {
+      font-size: 1.6rem;
+  }
+  
+  .recentle-added .offered-products .card-body .reset-link span {
+      font-size: 16px;
+      margin-right: 10px;
+  }
+  
+  .recentle-added .offered-products .btn-more {
+      display: inline-block;
+      width: 200px;
+      padding: .7rem 0;
+      text-align: center;
+      font-size: 16px;
+      color: #FFF;
+      border-radius: 28px;
+  }
+  
+  .pagination-lg .page-link {
+      padding: 0.6rem 1.3rem;
+  }
+  
+  .pagination-lg .page-item .page-link {
+      background: #ce4b5e;
+      color: #FFF;
+      border: 0;
+      border-radius: 10px !important;
+      margin: 0 5px;
+  }
+  /*end Recently-added-ads*/
+  /*start footer*/
+  
+  footer {
+      background: url(../images/Rectangle\ 12.png);
+      background-size: cover;
+  }
+  
+  footer p {
+      font-size: 15px;
+      padding: 0 5px;
+      line-height: 2;
+  }
+  
+  footer .list-ques li {
+      -webkit-transition: all .5s linear;
+      -moz-transition: all .5s linear;
+      -o-transition: all .5s linear;
+      transition: all .5s linear;
+  }
+  
+  footer .list-ques li:hover {
+      background: #f48359;
+  }
+  
+  footer .selver-color:hover {
+      color: rgb(231, 231, 231);
+  }
+  
+  footer h4 {
+      line-height: 1.6;
+  }
+  
+  footer .available-app p a {
+      display: inline-block;
+      width: 190px;
+      text-align: left;
+      background: #FFF;
+      padding: .7rem 0 .7rem 1rem;
+      border-radius: 30px;
+      font-weight: 600;
+  }
+  /*------------start media footer-------------*/
+  
+  @media screen and (max-width: 400px) {
+      footer .container p {
+          text-align: center;
+      }
+      footer .container .available-app {
+          text-align: center;
+      }
+  }
+  
+  @media screen and (min-width:401px) and (max-width:575.98px) {
+      footer .container p {
+          padding: 0 60px;
+          text-align: center;
+      }
+  }
+  
+  @media screen and (min-width:576px) and (max-width:767.98px) {
+      footer .container p {
+          padding: 0;
+          text-align: center;
+      }
+  }
+  /*------------end media footer-------------*/
+  /*end footer*/

@@ -1,0 +1,32 @@
+input[type=password] {
+    width: 100%;
+    padding: 12px 40px;
+    border: 0;
+    margin: 5px 0;
+    box-shadow: 0 2px 4px 0 #860000;
+}
+
+input[type="password"]:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.codeInfo {
+    width: 80%;
+}
+
+.codeInfo::before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 23px;
+    width: 11px;
+    height: 11px;
+    background: #f48359;
+    border-radius: 50%;
+}
+
+.codeInfo p {
+    margin-right: 3.2rem;
+    text-align: right;
+}

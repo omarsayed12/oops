@@ -1,0 +1,344 @@
+/*start general style*/
+
+body {
+    font-family: 'Cairo', sans-serif, 'Roboto';
+}
+
+.white-color {
+    color: #FFF;
+}
+
+.selver-color {
+    color: rgb(239 239 239)
+}
+
+.Cashmere-color {
+    color: #ce4b5e;
+}
+
+.Cashmere-color:hover {
+    color: #ce4b5e
+}
+
+.orange-color {
+    color: #f48359
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+.btn-search:focus,
+select:focus,
+.page-link:focus,
+.card-details .text-meesage:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.cars,
+.tec,
+.btn-more {
+    background-image: linear-gradient(to bottom, #ca4659, #f48359);
+}
+
+.mobile,
+.aniamls {
+    background-image: linear-gradient(to bottom, #ff5a72, #50151e);
+}
+
+.build {
+    background-image: linear-gradient(to bottom, #ff9168, #733823);
+}
+
+.fashon {
+    background-image: linear-gradient(to bottom, #00d9f5, #008394);
+}
+
+.border-heading::before {
+    content: "";
+    position: absolute;
+    height: 35px;
+    width: 4px;
+    top: -5px;
+    right: 0;
+    background: #ff9168;
+}
+
+.reset-link {
+    color: #2a2a2a
+}
+
+.reset-link:hover {
+    text-decoration: none;
+    color: #323232
+}
+
+.card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.weight-heading {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+/*end general style*/
+
+
+/*start header*/
+
+.header {
+    height: 500px;
+    position: relative;
+    background: url('../images/bg.png')center/cover no-repeat;
+}
+
+.header .add-advertisement {
+    padding: 2.5rem 2rem 0 0;
+}
+
+.header .add-advertisement .add-title {
+    background: #FFF;
+    padding: .4rem 2rem;
+    margin-right: .5rem;
+    font-size: 15px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.header .add-advertisement .icon-per {
+    font-size: 1.8rem;
+}
+
+.header .image-Logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .image-Logo img {
+    max-width: 40%;
+}
+
+
+/*end header*/
+
+
+/*start card-details*/
+
+.background {
+    position: relative;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    background: rgb(0 0 0 / 53%);
+}
+
+.card-details .car-name {
+    font-weight: 600;
+    color: #3c3c3c;
+}
+
+.card-details .p-car {
+    font-size: 15px;
+    font-weight: 600;
+    padding: .5rem 0;
+}
+
+.card-details .icon-link {
+    font-size: 19px;
+}
+
+.card-details .card-heading {
+    font-size: 16px;
+}
+
+.card-details .model-details,
+.card-details .more-details {
+    padding: .9rem 1.5rem;
+    margin: .6rem;
+    border-radius: 30px;
+    background: #FFF;
+    font-weight: 600;
+    box-shadow: 0 1px 2px 0 #d8d8d8;
+    color: #5f5f5f;
+}
+
+.card-details .more-details {
+    font-size: 15px;
+    padding: 2rem 1.5rem;
+}
+
+.card-details .text-meesage {
+    width: 100%;
+    padding: 1rem;
+    margin-top: .5rem;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 0 2px 9px 0 #c7c7c7;
+    color: #2d2d2d;
+    border: 1px solid #f1f1f1;
+}
+
+.card-details .price {
+    font-size: 20px;
+    background: #FFF;
+    padding: .9rem 0;
+    margin: .6rem;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 2px 0 #d8d8d8;
+}
+
+.client-info {
+    background: #FFF;
+    border-radius: 15px;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 2px 0 #d8d8d8;
+}
+
+.client-info .user-icon {
+    margin-top: 10px;
+}
+
+.card-details .detail-price .btn-more {
+    background: #ce4b5e;
+    margin-bottom: 2rem;
+}
+
+.card-details .detail-price .bg-orange {
+    background: #f48359;
+}
+
+.card-details .safety-info {
+    padding: 1.6rem .2rem;
+    margin-bottom: 2rem;
+    background: #545454;
+    color: #FFF;
+    border-radius: 20px;
+}
+
+.card-details .safety-info p {
+    position: relative;
+    padding-right: 17px;
+    line-height: 2;
+    text-align: right;
+}
+
+.card-details .safety-info p::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f48359;
+}
+
+.btn-more {
+    display: inline-block;
+    width: 200px;
+    padding: .7rem 0;
+    text-align: center;
+    font-size: 16px;
+    color: #FFF;
+    border-radius: 28px;
+}
+
+.btn-more:hover {
+    color: #FFF;
+}
+
+
+/*start card-details*/
+
+
+/*start footer*/
+
+footer {
+    background: url(../images/Rectangle\ 12@2x.png);
+    background-size: cover;
+}
+
+footer p {
+    font-size: 15px;
+    padding: 0 5px;
+    line-height: 2;
+}
+
+footer .list-ques li {
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+footer .list-ques li:hover {
+    background: #f48359;
+}
+
+footer .selver-color:hover {
+    color: rgb(231, 231, 231);
+}
+
+footer h4 {
+    line-height: 1.6;
+}
+
+footer .available-app p a {
+    display: inline-block;
+    width: 190px;
+    text-align: left;
+    background: #FFF;
+    padding: .7rem 0 .7rem 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+
+/*------------start media footer-------------*/
+
+@media screen and (max-width: 400px) {
+    footer .container p {
+        text-align: center;
+    }
+    footer .container .available-app {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:575.98px) {
+    footer .container p {
+        padding: 0 60px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767.98px) {
+    footer .container p {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+
+/*------------end media footer-------------*/
+
+
+/*end footer*/

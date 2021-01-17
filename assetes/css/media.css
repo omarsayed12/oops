@@ -1,28 +1,63 @@
+/*start searh*/
+
 @media screen and (max-width:400px) {
-    footer .container-fluid p {
+    .move-form {
+        margin-top: -133.4px
+    }
+    .move-form .form-content .space-margin {
+        margin: 15px 0
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:575.98px) {
+    .move-form {
+        margin-top: -107.9px
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .move-form {
+        margin-top: -133.4px
+    }
+    .move-form .form-content .space-margin {
+        margin: 15px 0
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991.98px) {
+    .move-form {
+        margin-top: -80.6px 0;
+    }
+}
+
+
+/*end searh*/
+
+
+/*start footer*/
+
+@media screen and (max-width: 400px) {
+    footer .container p {
         text-align: center;
     }
-    footer .container-fluid .available-app {
+    footer .container .available-app {
         text-align: center;
     }
 }
 
 @media screen and (min-width:401px) and (max-width:575.98px) {
-    footer .container-fluid p {
-        padding: 0 55px;
+    footer .container p {
+        padding: 0 60px;
         text-align: center;
     }
 }
 
 @media screen and (min-width:576px) and (max-width:767.98px) {
-    footer .container-fluid p {
+    footer .container p {
         padding: 0;
         text-align: center;
     }
 }
 
-@media screen and (min-width:768px) and (max-width:991.98px) {
-    footer .social-icon ul li {
-        padding: 0 !important
-    }
-}
+
+/*end footer*/
