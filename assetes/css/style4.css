@@ -25,7 +25,7 @@ body {
 }
 
 input[type="text"]:focus,
-input[type="email"]:focus,
+input[type="password"]:focus,
 .btn-search:focus,
 .page-link:focus,
 .card-details .text-meesage:focus {
@@ -160,8 +160,8 @@ input::placeholder {
     color: #e4e4e4
 }
 
-input[type=text],
-input[type=email] {
+input[type="text"],
+input[type="password"] {
     width: 100%;
     padding: 12px 40px;
     border: 0;
