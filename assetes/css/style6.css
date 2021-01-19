@@ -30,31 +30,18 @@ body {
 
 input[type="text"]:focus,
 .form-control:focus,
-.btn-search:focus,
 select:focus,
-.page-link:focus,
 .description-text {
     outline: 0;
     box-shadow: 0 1px 2px 0 #88888869;
 }
 
-.cars,
-.tec,
 .btn-addert {
     background-image: linear-gradient(to bottom, #ca4659, #f48359);
 }
 
-.mobile,
-.aniamls {
-    background-image: linear-gradient(to bottom, #ff5a72, #50151e);
-}
-
 .build {
     background-image: linear-gradient(to bottom, #ff9168, #733823);
-}
-
-.fashon {
-    background-image: linear-gradient(to bottom, #00d9f5, #008394);
 }
 
 .border-heading::before {
@@ -76,14 +63,6 @@ select:focus,
     color: #323232
 }
 
-.card-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
 
 /*end general style*/
 
@@ -91,7 +70,7 @@ select:focus,
 /*start header*/
 
 .header {
-    height: 500px;
+    height: 98vh;
     position: relative;
     background: url('../images/bg.png')center/cover no-repeat;
 }
@@ -167,8 +146,8 @@ input[type='text'],
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
     text-indent: 1px;
-    text-overflow: ''
 }
 
 select.minimal {
@@ -188,12 +167,12 @@ option {
 }
 
 .parent-checkbox {
-    width: 80%;
+    margin: auto;
 }
 
 .form-group-checkbox {
-    display: inline-block;
-    margin: 15px;
+    padding: 10px 0;
+    text-align: left;
 }
 
 .form-group-checkbox input {
@@ -248,6 +227,10 @@ option {
     width: 100%;
     border: 0;
     border-radius: 20px;
+}
+
+.btn:focus {
+    box-shadow: none;
 }
 
 .btn-addert {

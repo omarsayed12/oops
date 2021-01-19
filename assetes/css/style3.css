@@ -24,33 +24,15 @@ body {
     color: #f48359
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
 .btn-search:focus,
 select:focus,
-.page-link:focus,
 .card-details .text-meesage:focus {
     outline: 0;
     box-shadow: none;
 }
 
-.cars,
-.tec,
 .btn-more {
     background-image: linear-gradient(to bottom, #ca4659, #f48359);
-}
-
-.mobile,
-.aniamls {
-    background-image: linear-gradient(to bottom, #ff5a72, #50151e);
-}
-
-.build {
-    background-image: linear-gradient(to bottom, #ff9168, #733823);
-}
-
-.fashon {
-    background-image: linear-gradient(to bottom, #00d9f5, #008394);
 }
 
 .border-heading::before {
@@ -92,7 +74,7 @@ select:focus,
 /*start header*/
 
 .header {
-    height: 500px;
+    height: 98vh;
     position: relative;
     background: url('../images/bg.png')center/cover no-repeat;
 }

@@ -81,7 +81,7 @@
     /*start header*/
     
     .header {
-        height: 500px;
+        height: 98vh;
         position: relative;
         background: url('../images/bg.png')center/cover no-repeat;
     }
@@ -188,20 +188,14 @@
     
     .section-Properties .dropdown .btn {
         padding-right: 0;
-        width: 100%;
-        /*
-            background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-            background-repeat: no-repeat;
-            */
     }
-    /***************/
     
     .dropdown-toggle::after {
-        display: inline-block;
+        display: none;
     }
     
     .btn-dark {
-        width: 175px;
+        width: 190px;
         border-radius: 15px;
         background-color: #3d3d3d;
         color: #dedede;
@@ -215,18 +209,14 @@
     }
     
     .dropdown-menu {
-        min-width: 11rem;
-        transform: translate3d(25px, 30px, 0px) !important;
-        background-color: #dadada6b;
-    }
-    
-    .dropdown-item {
-        text-align: center;
+        min-width: 13rem;
+        transform: translate3d(11px, 30px, 0px) !important;
+        background-color: #f5f5f5;
     }
     
     .dropdown-item:focus,
     .dropdown-item:hover {
-        background: #ff7a7a94
+        background: #01c6e0
     }
     
     .btn-dark:not(:disabled):not(.disabled).active:focus,
@@ -235,18 +225,6 @@
     .btn-dark.focus,
     .btn-dark:focus {
         box-shadow: none;
-    }
-    /****************************/
-    /****************************/
-    
-    .dropdown {
-        width: 100%;
-    }
-    
-    .dropdown-toggle::after {
-        position: absolute;
-        top: 13px;
-        left: 3px
     }
     /*end section-properties*/
     /*start Recently-added-ads*/
@@ -262,6 +240,12 @@
         border-radius: 30px;
         border: 1px solid #e4e4e4;
         background-color: #f3f3f3;
+    }
+    
+    @media screen and (max-width:576px) {
+        .recentle-added .offered-products .card {
+            width: 24rem;
+        }
     }
     
     .recentle-added .offered-products .card-body {

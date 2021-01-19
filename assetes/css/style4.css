@@ -25,31 +25,13 @@ body {
 }
 
 input[type="text"]:focus,
-input[type="password"]:focus,
-.btn-search:focus,
-.page-link:focus,
-.card-details .text-meesage:focus {
+input[type="password"]:focus {
     outline: 0;
     box-shadow: none;
 }
 
-.cars,
-.tec,
 .btn-more {
     background-image: linear-gradient(to bottom, #ca4659, #f48359);
-}
-
-.mobile,
-.aniamls {
-    background-image: linear-gradient(to bottom, #ff5a72, #50151e);
-}
-
-.build {
-    background-image: linear-gradient(to bottom, #ff9168, #733823);
-}
-
-.fashon {
-    background-image: linear-gradient(to bottom, #00d9f5, #008394);
 }
 
 .border-heading::before {
@@ -71,14 +53,6 @@ input[type="password"]:focus,
     color: #FFF
 }
 
-.card-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
 .weight-heading {
     font-weight: 700;
     font-size: 18px;
@@ -91,7 +65,7 @@ input[type="password"]:focus,
 /*start header*/
 
 .header {
-    height: 500px;
+    height: 98vh;
     position: relative;
     background: url('../images/bg.png')center/cover no-repeat;
 }
@@ -138,6 +112,15 @@ input[type="password"]:focus,
 .log-in .login-info {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+}
+
+@media screen and (max-width:768px) {
+    .log-in .X,
+    .log-in .login-info {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-radius: 70px;
+    }
 }
 
 .log-in .fild-icon {

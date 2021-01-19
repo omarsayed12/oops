@@ -25,31 +25,9 @@
   }
   
   input[type="text"]:focus,
-  input[type="email"]:focus,
-  .btn-search:focus,
-  select:focus,
-  .page-link:focus {
+  select:focus {
       outline: 0;
       box-shadow: none;
-  }
-  
-  .cars,
-  .tec,
-  .btn-more {
-      background-image: linear-gradient(to bottom, #ca4659, #f48359);
-  }
-  
-  .mobile,
-  .aniamls {
-      background-image: linear-gradient(to bottom, #ff5a72, #50151e);
-  }
-  
-  .build {
-      background-image: linear-gradient(to bottom, #ff9168, #733823);
-  }
-  
-  .fashon {
-      background-image: linear-gradient(to bottom, #00d9f5, #008394);
   }
   
   .border-heading::before {
@@ -82,7 +60,7 @@
   /*start header*/
   
   .header {
-      height: 500px;
+      height: 98vh;
       position: relative;
       background: url('../images/bg.png')center/cover no-repeat;
   }
@@ -131,8 +109,7 @@
   }
   
   input[type="text"],
-  select,
-  .btn-search {
+  select {
       font-weight: 600;
       width: 100%;
       border: 0;
@@ -161,17 +138,12 @@
   select option {
       color: #000000;
   }
-  
-  .btn-search {
-      background: #FFF;
-      color: #797979fa;
-  }
   /*------------start media search--------------*/
   /*start searh*/
   
   @media screen and (max-width:400px) {
       .move-form {
-          margin-top: -275px
+          margin-top: -85px
       }
       .move-form .form-content .space-margin {
           margin: 15px 0
@@ -180,13 +152,13 @@
   
   @media screen and (min-width:401px) and (max-width:575.98px) {
       .move-form {
-          margin-top: -275px
+          margin-top: -85px
       }
   }
   
   @media screen and (min-width: 576px) and (max-width: 767.98px) {
       .move-form {
-          margin-top: -225.4px
+          margin-top: -85px
       }
       .move-form .form-content .space-margin {
           margin: 15px 0
@@ -213,6 +185,12 @@
       border: 1px solid #e4e4e4;
   }
   
+  @media screen and (max-width:576px) {
+      .offered-products .card {
+          width: 22rem;
+      }
+  }
+  
   .recentle-added .offered-products .card-body {
       padding: .7rem 1rem;
   }
@@ -234,16 +212,6 @@
   .recentle-added .offered-products .card-body .reset-link span {
       font-size: 16px;
       margin-right: 10px;
-  }
-  
-  .recentle-added .offered-products .btn-more {
-      display: inline-block;
-      width: 200px;
-      padding: .7rem 0;
-      text-align: center;
-      font-size: 16px;
-      color: #FFF;
-      border-radius: 28px;
   }
   
   .pagination-lg .page-link {

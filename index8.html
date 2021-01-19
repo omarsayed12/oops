@@ -19,14 +19,14 @@
     <!--start header-->
     <div class="header">
         <div class="container-fluid">
-            <div class="add-advertisement">
+            <div class="add-advertisement d-flex">
+                <a href="index4.html"><i class="fas fa-user fa-2x icon-per  white-color"></i></a>
                 <a href="index8.html" class="Cashmere-color d-flex text-decoration-none">
-                    <i class="fas fa-user fa-2x icon-per  white-color"></i>
                     <h3 class="add-title">اضف اعلان</h3>
                 </a>
             </div>
             <div class="image-Logo text-center">
-                <img src="assetes/images/! اووبس@2x.png" alt="">
+                <a href="index.html"><img src="assetes/images/! اووبس@2x.png" alt=""></a>
             </div>
         </div>
     </div>
@@ -44,8 +44,9 @@
                                 <input type="text" class="form-control" id="advertisement">
                             </div>
                             <div class="form-group">
-                                <label for="advertisementSelect" class="label-heading">صنف اعلانك</label>
-                                <select class="form-control minimal" id="advertisementSelect">
+                                <label class="label-heading">صنف اعلانك</label>
+                                <select class="form-control minimal" id="carselect">
+                                    <option value="">اختر الاعلان عن</option>
                                     <option value="1">عربيات</option>
                                     <option value="2">الكترونيات</option>
                                     <option value="3">موبايلات</option>
@@ -100,43 +101,65 @@
                                     <option>مستعمل</option>
                                 </select>
                             </div>
-                            <h4 class="orange-color py-2">اضافات :</h4>
-                            <div class="parent-checkbox mx-auto text-center">
-                                <div class="form-group-checkbox" dir="ltr">
-                                    <input type="checkbox" id="chik1">
-                                    <label for="chik1">كاميرا خلفي</label>
-                                </div>
-                                <div class="form-group-checkbox" dir="ltr">
-                                    <input type="checkbox" id="chik2">
-                                    <label for="chik2">فوانيس شبوره</label>
-                                </div>
-                                <div class="form-group-checkbox" dir="ltr">
-                                    <input type="checkbox" id="chik3">
-                                    <label for="chik3">زجاج كهربي</label>
-                                </div>
-                                <div class="form-group-checkbox" dir="ltr">
-                                    <input type="checkbox" id="chik4">
-                                    <label for="chik4">ليدات خلفي</label>
-                                </div>
-                                <div class="form-group-checkbox" dir="ltr">
-                                    <input type="checkbox" id="chik5">
-                                    <label for="chik5">زجاج ملون جانبي</label>
-                                </div>
-                                <div class="form-group-checkbox" dir="ltr">
-                                    <input type="checkbox" id="chik6">
-                                    <label for="chik6">ليدات امامي</label>
-                                </div>
-                                <div class="form-group-checkbox" dir="ltr">
-                                    <input type="checkbox" id="chik7">
-                                    <label for="chik7">تكيف خلفي</label>
-                                </div>
-                                <div class="form-group-checkbox" dir="ltr">
-                                    <input type="checkbox" id="chik8">
-                                    <label for="chik8">زجاج ملون خلفي</label>
-                                </div>
-                                <div class="form-group-checkbox" dir="ltr">
-                                    <input type="checkbox" id="chik9">
-                                    <label for="chik9">جميع الالوان</label>
+                            <div class="optioncars" id="show">
+                                <h4 class="orange-color py-2">اضافات :</h4>
+                                <div class="parent-checkbox mx-auto text-center">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-6">
+                                            <div class="form-group-checkbox" dir="ltr">
+                                                <input type="checkbox" id="chik1">
+                                                <label for="chik1">كاميرا خلفي</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6">
+                                            <div class="form-group-checkbox" dir="ltr">
+                                                <input type="checkbox" id="chik2">
+                                                <label for="chik2">فوانيس شبوره</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6">
+                                            <div class="form-group-checkbox" dir="ltr">
+                                                <input type="checkbox" id="chik3">
+                                                <label for="chik3">زجاج كهربي</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6">
+                                            <div class="form-group-checkbox" dir="ltr">
+                                                <input type="checkbox" id="chik4">
+                                                <label for="chik4">ليدات خلفي</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6">
+                                            <div class="form-group-checkbox" dir="ltr">
+                                                <input type="checkbox" id="chik5">
+                                                <label for="chik5">زجاج ملون جانبي</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6">
+                                            <div class="form-group-checkbox" dir="ltr">
+                                                <input type="checkbox" id="chik6">
+                                                <label for="chik6">ليدات امامي</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6">
+                                            <div class="form-group-checkbox" dir="ltr">
+                                                <input type="checkbox" id="chik7">
+                                                <label for="chik7">تكيف خلفي</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6">
+                                            <div class="form-group-checkbox" dir="ltr">
+                                                <input type="checkbox" id="chik8">
+                                                <label for="chik8">زجاج ملون خلفي</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6">
+                                            <div class="form-group-checkbox" dir="ltr">
+                                                <input type="checkbox" id="chik9">
+                                                <label for="chik9">جميع الالوان</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group mt-5">
@@ -176,7 +199,7 @@
             <div class="row ">
                 <div class="col-lg-3 col-md-5 col-sm-7 ">
                     <div class="text-center ">
-                        <img src="assetes/images/! اووبس.png " class="w-50 text-center " alt=" ">
+                        <a href="index.html"><img src="assetes/images/! اووبس.png" class="w-50 text-center" alt="footerLogo"></a>
                     </div>
                     <p class="selver-color py-3 ">الحسومات. الاصغر خطأ نحسبه اللذة والمداعبات من ضعف الكل لحقيقة عظيمة الخيار الذي تم اختياره للجسم او ال. الخيار أو الخيار الفاسد يكره مكاتب الحقيقة والمداعبات من ضعف الكل لحقيقة عظيمة الخيار</p>
                 </div>
@@ -222,9 +245,10 @@
     </footer>
     <!--end footer-->
     <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
     <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js " integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK " crossorigin="anonymous "></script>
-
+    <script src="assetes/js/vendor/jquery.js"></script>
 </body>
 
 </html>
